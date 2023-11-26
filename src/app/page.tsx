@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <SideBarMobile />
       <div
-        className="flex flex-col flex-1 lg:flex-row justify-between w-full gap-4 p-8 items-start mt-4 lg:mt-0 lg:items-center"
+        className="flex flex-col flex-1 lg:flex-row justify-between w-full gap-4 px-8 py-6 items-start mt-4 lg:mt-0 lg:items-center"
         style={{
           backgroundImage: `url(/assets/fundo-curva.png)`,
           backgroundRepeat: 'no-repeat',
