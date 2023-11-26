@@ -20,19 +20,12 @@ function Header() {
     }
   }, [isMusicPlaying]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsMusicPlaying(true)
-    }, 3000)
-  }, [])
-
-
   const toggleMusic = () => {
     setIsMusicPlaying((prev) => !prev);
   };
 
   return (
-    <main className="h-24 w-full items-center justify-start px-8 shadow-sm shadow-white hidden lg:flex">
+    <main className="h-24 w-full items-center justify-start px-8 shadow-sm shadow-white hidden lg:flex z-10">
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
         src="/logo.png"

@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 function SwiperSlideField() {
   return (
-    <div className="w-full h-[200px] sm:h-[350px] xl:h-[450px] rounded-lg shadow-md shadow-purple-300 overflow-hidden">
+    <div className="w-full h-[200px] sm:h-[350px] xl:h-[450px] rounded-lg overflow-hidden z-10">
       <Swiper
         centeredSlides={true}
         autoplay={{
