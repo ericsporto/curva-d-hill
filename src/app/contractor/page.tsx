@@ -81,7 +81,7 @@ export default function Contractor() {
             </div>
             <div className="flex items-center gap-4 text-red-600">
               <FiYoutube className="w-10 h-10" />
-              <p className="font-bold text-lg">Banda Curva de Hill</p>
+              <p className="font-bold text-lg">Banda Curva D`Hill</p>
             </div>
           </div>
         </div>
