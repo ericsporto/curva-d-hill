@@ -1,3 +1,4 @@
+'use client';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import Image from 'next/image';
@@ -8,17 +9,22 @@ import { GiSoundOff, GiSoundOn } from 'react-icons/gi';
 import Link from 'next/link';
 
 const navigation = [
-  { name: 'Agenda', href: '#', icon: <FaClipboardList />, current: false },
-  { name: 'Fotos', href: '#', icon: <MdPhotoCamera />, current: false },
+  {
+    name: 'Agenda',
+    href: 'schedule',
+    icon: <FaClipboardList />,
+    current: false,
+  },
+  { name: 'Fotos', href: 'photos', icon: <MdPhotoCamera />, current: false },
   {
     name: 'Integrantes',
-    href: '#',
+    href: 'musicians',
     icon: <IoMdMusicalNotes />,
     current: false,
   },
   {
     name: 'Área do Contratante',
-    href: '#',
+    href: 'contractor',
     icon: <MdSimCardDownload />,
     current: false,
   },
@@ -38,12 +44,6 @@ export default function SideBarMobile() {
       }
     }
   }, [isMusicPlaying]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsMusicPlaying(true);
-    }, 3000);
-  }, []);
 
   const toggleMusic = () => {
     setIsMusicPlaying((prev) => !prev);
@@ -90,7 +90,7 @@ export default function SideBarMobile() {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                   >
-                    <div className="absolute left-48 top-0 flex w-16 justify-center pt-5">
+                    <div className="absolute left-64 top-0 flex w-16 justify-center pt-5">
                       <button
                         type="button"
                         className="-m-2.5 p-2.5"
@@ -106,21 +106,26 @@ export default function SideBarMobile() {
                   </Transition.Child>
                   <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-black px-6 pb-2">
                     <div className="flex h-16 shrink-0 items-center">
-                      <Image
-                        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                        src="/logo.png"
-                        alt="Curva DHill Logo"
-                        width={40}
-                        height={40}
-                        priority
-                      />
+                      <Link href='/'>
+                        <Image
+                          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                          src="/logo.png"
+                          alt="Curva DHill Logo"
+                          width={40}
+                          height={40}
+                          priority
+                        />
+                      </Link>
                     </div>
                     <nav className="flex flex-1 flex-col">
                       <ul role="list" className="flex flex-1 flex-col gap-y-7">
                         <li>
                           <ul role="list" className="-mx-2 space-y-1">
                             {navigation.map((item) => (
-                              <li key={item.name} className='text-white flex items-center border-b border-gray-800 pt-3 pb-3'>
+                              <li
+                                key={item.name}
+                                className="text-white flex items-center border-b border-gray-800 pt-3 pb-3"
+                              >
                                 {item.icon}
                                 <Link
                                   href={item.href}

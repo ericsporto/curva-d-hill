@@ -26,7 +26,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <p className="text-gray-400 text-xs px-6 lg:px-0 text-center pb-4">
+        <p className="text-gray-400 text-[9px] px-6 lg:px-0 text-center pb-4">
           Desenvolvido por Porto Desenvolvimento de Softwares LTDA.
         </p>
       </div>

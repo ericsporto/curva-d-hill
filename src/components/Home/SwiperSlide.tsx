@@ -21,6 +21,7 @@ function SwiperSlideField() {
             src="/assets/curva-1.jpg"
             alt="foto_banda_curva_d_hill_1"
             fill
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -28,6 +29,7 @@ function SwiperSlideField() {
             src="/assets/curva-2.jpg"
             alt="foto_banda_curva_d_hill_2"
             fill
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -35,6 +37,7 @@ function SwiperSlideField() {
             src="/assets/curva-3.jpg"
             alt="foto_banda_curva_d_hill_3"
             fill
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -42,6 +45,7 @@ function SwiperSlideField() {
             src="/assets/curva-4.jpg"
             alt="foto_banda_curva_d_hill_4"
             fill
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -49,9 +53,10 @@ function SwiperSlideField() {
             src="/assets/curva-5.jpg"
             alt="foto_banda_curva_d_hill_5"
             fill
+            priority
+
           />
         </SwiperSlide>
-
       </Swiper>
     </div>
   );
