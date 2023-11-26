@@ -5,7 +5,7 @@ import { FiYoutube } from 'react-icons/fi';
 
 function Footer() {
   return (
-    <footer className="h-40 w-full flex justify-center items-center text-white border-t mt-6 lg:mt-0 z-10">
+    <footer className="h-28 w-full flex justify-center items-center text-white border-t mt-6 lg:mt-0 z-10">
       <div className="flex flex-col justify-between items-center w-full h-full">
         <div className='flex flex-col justify-center items-center h-full'>
           <h1 className="text-lg font-bold">Acesse nossas mídias sociais:</h1>
