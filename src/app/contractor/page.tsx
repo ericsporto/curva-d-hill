@@ -8,9 +8,8 @@ import { CgMail } from 'react-icons/cg';
 
 export default function Contractor() {
   return (
-    <main className="flex items-center justify-between h-full">
-      <div
-        className="flex flex-col flex-1 lg:flex-row justify-between w-full gap-4 px-8 items-start lg:items-center"
+      <main
+        className="flex flex-col lg:flex-row justify-between h-full w-full gap-4 px-8 items-start lg:items-center relative"
         style={{
           backgroundImage: `url(/assets/fundo-curva-contractor.png)`,
           backgroundRepeat: 'no-repeat',
@@ -25,7 +24,7 @@ export default function Contractor() {
             No show da banda você vai encontrar hits nostálgicos e atuais do Pop
             Rock Nacional/Internacional, Pop e Reggae. Com influências que vão
             desde Legião Urbana a Charlie Brown Jr, passando por Capital
-            Inicial, Coldplay, Maroon5, Natiruts, etc.
+            Inicial, Coldplay, Maroon V, Natiruts, etc.
           </h3>
         </div>
         <div className="w-full flex flex-col text-gray-200 z-10">
@@ -85,11 +84,10 @@ export default function Contractor() {
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-90"
-        style={{ zIndex: 1 }}
-      />
-    </main>
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-90"
+          style={{ zIndex: 1 }}
+        />
+      </main>
   );
 }

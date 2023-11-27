@@ -1,22 +1,16 @@
 'use client';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import SwiperSlideField from '@/components/Home/SwiperSlide';
-import SideBarMobile from '@/components/MobileSideBar';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between h-full">
-      <Header />
-      <SideBarMobile />
+    <main className="flex flex-col items-center justify-between h-full relative">
       <div
-        className="flex flex-col flex-1 lg:flex-row justify-between w-full gap-4 px-8 py-6 items-start mt-4 lg:mt-0 lg:items-center"
+        className="flex flex-col flex-1 lg:flex-row justify-between w-full gap-4 px-8 items-start mt-4 lg:mt-0 lg:items-center"
         style={{
           backgroundImage: `url(/assets/fundo-curva.png)`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'left',
           backgroundSize: 'contain',
-          backgroundColor: 'rgba(0, 0, 0, 0)',
         }}
       >
         <div className="w-full text-gray-200 lg:pr-24 z-10">
@@ -36,12 +30,11 @@ export default function Home() {
           </h3>
         </div>
         <SwiperSlideField />
-      </div>
       <div
         className="absolute top-0 left-0 w-full h-full bg-black lg:opacity-90"
         style={{ zIndex: 1 }}
       />
-      <Footer />
+      </div>
     </main>
   );
 }
