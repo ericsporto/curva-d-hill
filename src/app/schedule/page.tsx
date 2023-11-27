@@ -8,7 +8,7 @@ export default function Schedule() {
       city: 'Três Corações - MG',
     },
     {
-      date: '23/12/2023',
+      date: '21/12/2023',
       place: 'Jardim Elétrico',
       city: 'Varginha - MG',
     },
