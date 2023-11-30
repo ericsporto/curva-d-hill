@@ -40,9 +40,9 @@ const PhotoModal: React.FC<PhotoModalProps> = ({
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel
-                className="relative transform overflow-hidden rounded-lg bg-gray-600 shadow-xl transition-all w-[350px] sm:w-[510px] lg:w-[800px] xl:w-[1000px]"
+                className="relative transform overflow-hidden rounded-lg bg-gray-600 shadow-xl transition-all w-[320px] sm:w-[435px] lg:w-[680px] xl:w-[895px]"
               >
-                <div className='h-[230px] sm:h-[325px] lg:h-[510px] xl:h-[670px]'  style={{
+                <div className='h-[240px] sm:h-[325px] lg:h-[510px] xl:h-[670px]'  style={{
                   backgroundImage: `url(${img})`,
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center',
