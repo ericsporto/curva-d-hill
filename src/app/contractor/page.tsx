@@ -19,7 +19,7 @@ export default function Contractor() {
         }}
       >
         <div className="w-full text-gray-200 lg:pr-24 z-10 border-b lg:border-none py-4">
-          <h1 className="text-xl lg:text-5xl font-bold">Nossa História:</h1>
+          <h1 className="text-xl lg:text-5xl font-bold">Nosso Som:</h1>
           <h3 className="text-sm lg:text-lg font-normal lg:font-semibold mt-2">
             No show da banda você vai encontrar hits nostálgicos e atuais do Pop
             Rock Nacional/Internacional, Pop e Reggae. Com influências que vão
@@ -70,11 +70,11 @@ export default function Contractor() {
               <FaWhatsapp className="w-10 h-10" />
               <p className="font-bold text-lg">(35) 9.9769-0720</p>
             </div>
-            <div className="flex items-center gap-4 pb-4 text-[#C00ACA]">
+            <div className="flex items-center gap-4 pb-4 text-[#0a17ca]">
               <FaInstagram className="w-10 h-10" />
               <p className="font-bold text-lg">@curvadhill</p>
             </div>
-            <div className="flex items-center gap-4 pb-4 text-white">
+            <div className="flex items-center gap-4 pb-4 text-[#cab70a]">
               <CgMail className="w-10 h-10" />
               <p className="font-bold text-lg">curvadhill@gmail.com</p>
             </div>
