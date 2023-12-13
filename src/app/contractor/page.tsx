@@ -15,7 +15,6 @@ export default function Contractor() {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'left',
           backgroundSize: 'contain',
-          backgroundColor: 'rgba(0, 0, 0, 0)',
         }}
       >
         <div className="w-full text-gray-200 lg:pr-24 z-10 border-b lg:border-none py-4">
